@@ -8,6 +8,9 @@ import EngineNative from 'bitmovin-player/modules/bitmovinplayer-engine-native';
 import HlsModule from 'bitmovin-player/modules/bitmovinplayer-hls';
 import MseRendererModule from 'bitmovin-player/modules/bitmovinplayer-mserenderer';
 import StyleModule from 'bitmovin-player/modules/bitmovinplayer-style';
+import AdvertisingCoreModule from 'bitmovin-player/modules/bitmovinplayer-advertising-core';
+import AdvertisingModule from 'bitmovin-player/modules/bitmovinplayer-advertising-ima';
+import XMLModule from 'bitmovin-player/modules/bitmovinplayer-xml';
 
 import { UIFactory } from './ui-factory';
 
@@ -36,7 +39,10 @@ const sourceConfig: SourceConfig = {
     AbrModule,
     Mp4Module,
     ContainerTsModule,
-    StyleModule
+    StyleModule,
+    XMLModule,
+    AdvertisingCoreModule,
+    AdvertisingModule
 ].forEach(Player.addModule);
 
 const videoPlayer: PlayerAPI = new Player(domElement, playerConfig);
