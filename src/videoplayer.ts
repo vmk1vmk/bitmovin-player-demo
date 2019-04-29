@@ -22,13 +22,16 @@ if (!domElement) {
 }
 
 const playerConfig: PlayerConfig = {
-    key: process.env.BITMOVIN_API_KEY || ''
+    key: process.env.BITMOVIN_API_KEY || '',
+    cast: {
+        enable: true
+    }
 };
 
 const sourceConfig: SourceConfig = {
     title: 'Invalid Source example',
     description: 'An invalid source is loaded and the ui structure is duplicated',
-    progressive: '/non-existent-video.mp4'
+    progressive: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/MI201109210084_mpeg-4_hd_high_1080p25_10mbits.mp4' // sauce: https://bitmovin.com/demos/stream-test
 };
 
 [

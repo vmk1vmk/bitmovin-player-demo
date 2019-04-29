@@ -10,11 +10,11 @@
  *         )
  * );
  */
-.bmpui-ui-component, .bmpui-ui-button, .bmpui-ui-hugeplaybacktogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-playbacktogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton, .bmpui-ui-label, .bmpui-ui-playbacktimelabel, .bmpui-ui-container, .bmpui-ui-controlbar, .bmpui-ui-playbacktoggle-overlay, .bmpui-ui-uicontainer, .bmpui-ui-titlebar, .bmpui-ui-volumecontrolbutton, .bmpui-ui-seekbar, .bmpui-ui-volumeslider, .bmpui-ui-spacer {
+.bmpui-ui-component, .bmpui-ui-button, .bmpui-ui-hugeplaybacktogglebutton, .bmpui-ui-casttogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-playbacktogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton, .bmpui-ui-clickoverlay, .bmpui-ui-label, .bmpui-ui-playbacktimelabel, .bmpui-ui-container, .bmpui-ui-controlbar, .bmpui-ui-playbacktoggle-overlay, .bmpui-ui-uicontainer, .bmpui-ui-titlebar, .bmpui-ui-volumecontrolbutton, .bmpui-ui-buffering-overlay, .bmpui-ui-seekbar, .bmpui-ui-volumeslider, .bmpui-ui-spacer {
   /*! placeholder to avoid removal of empty selector */
   outline: 0; }
 
-.bmpui-ui-button, .bmpui-ui-hugeplaybacktogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-playbacktogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton {
+.bmpui-ui-button, .bmpui-ui-hugeplaybacktogglebutton, .bmpui-ui-casttogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-playbacktogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton, .bmpui-ui-clickoverlay {
   background-color: transparent;
   background-origin: content-box;
   background-position: center;
@@ -27,22 +27,24 @@
   height: 1.5em;
   min-width: 1.5em;
   padding: .25em; }
-  .bmpui-ui-button .bmpui-label, .bmpui-ui-hugeplaybacktogglebutton .bmpui-label, .bmpui-ui-fullscreentogglebutton .bmpui-label, .bmpui-ui-playbacktogglebutton .bmpui-label, .bmpui-ui-volumetogglebutton .bmpui-label, .bmpui-ui-vrtogglebutton .bmpui-label {
+  .bmpui-ui-button .bmpui-label, .bmpui-ui-hugeplaybacktogglebutton .bmpui-label, .bmpui-ui-casttogglebutton .bmpui-label, .bmpui-ui-fullscreentogglebutton .bmpui-label, .bmpui-ui-playbacktogglebutton .bmpui-label, .bmpui-ui-volumetogglebutton .bmpui-label, .bmpui-ui-vrtogglebutton .bmpui-label, .bmpui-ui-clickoverlay .bmpui-label {
     color: #fff;
     display: none; }
-  .bmpui-disabled.bmpui-ui-button, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton, .bmpui-disabled.bmpui-ui-fullscreentogglebutton, .bmpui-disabled.bmpui-ui-playbacktogglebutton, .bmpui-disabled.bmpui-ui-volumetogglebutton, .bmpui-disabled.bmpui-ui-vrtogglebutton {
+  .bmpui-disabled.bmpui-ui-button, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton, .bmpui-disabled.bmpui-ui-casttogglebutton, .bmpui-disabled.bmpui-ui-fullscreentogglebutton, .bmpui-disabled.bmpui-ui-playbacktogglebutton, .bmpui-disabled.bmpui-ui-volumetogglebutton, .bmpui-disabled.bmpui-ui-vrtogglebutton, .bmpui-disabled.bmpui-ui-clickoverlay {
     cursor: default; }
-    .bmpui-disabled.bmpui-ui-button, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton, .bmpui-disabled.bmpui-ui-fullscreentogglebutton, .bmpui-disabled.bmpui-ui-playbacktogglebutton, .bmpui-disabled.bmpui-ui-volumetogglebutton, .bmpui-disabled.bmpui-ui-vrtogglebutton,
+    .bmpui-disabled.bmpui-ui-button, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton, .bmpui-disabled.bmpui-ui-casttogglebutton, .bmpui-disabled.bmpui-ui-fullscreentogglebutton, .bmpui-disabled.bmpui-ui-playbacktogglebutton, .bmpui-disabled.bmpui-ui-volumetogglebutton, .bmpui-disabled.bmpui-ui-vrtogglebutton, .bmpui-disabled.bmpui-ui-clickoverlay,
     .bmpui-disabled.bmpui-ui-button > *,
     .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton > *,
+    .bmpui-disabled.bmpui-ui-casttogglebutton > *,
     .bmpui-disabled.bmpui-ui-fullscreentogglebutton > *,
     .bmpui-disabled.bmpui-ui-playbacktogglebutton > *,
     .bmpui-disabled.bmpui-ui-volumetogglebutton > *,
-    .bmpui-disabled.bmpui-ui-vrtogglebutton > * {
+    .bmpui-disabled.bmpui-ui-vrtogglebutton > *,
+    .bmpui-disabled.bmpui-ui-clickoverlay > * {
       pointer-events: none; }
-    .bmpui-disabled.bmpui-ui-button .bmpui-label:hover, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-fullscreentogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-playbacktogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-volumetogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-vrtogglebutton .bmpui-label:hover {
+    .bmpui-disabled.bmpui-ui-button .bmpui-label:hover, .bmpui-disabled.bmpui-ui-hugeplaybacktogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-casttogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-fullscreentogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-playbacktogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-volumetogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-vrtogglebutton .bmpui-label:hover, .bmpui-disabled.bmpui-ui-clickoverlay .bmpui-label:hover {
       text-decoration: none; }
-  .bmpui-hidden.bmpui-ui-button, .bmpui-hidden.bmpui-ui-hugeplaybacktogglebutton, .bmpui-hidden.bmpui-ui-fullscreentogglebutton, .bmpui-hidden.bmpui-ui-playbacktogglebutton, .bmpui-hidden.bmpui-ui-volumetogglebutton, .bmpui-hidden.bmpui-ui-vrtogglebutton {
+  .bmpui-hidden.bmpui-ui-button, .bmpui-hidden.bmpui-ui-hugeplaybacktogglebutton, .bmpui-hidden.bmpui-ui-casttogglebutton, .bmpui-hidden.bmpui-ui-fullscreentogglebutton, .bmpui-hidden.bmpui-ui-playbacktogglebutton, .bmpui-hidden.bmpui-ui-volumetogglebutton, .bmpui-hidden.bmpui-ui-vrtogglebutton, .bmpui-hidden.bmpui-ui-clickoverlay {
     display: none; }
 
 .bmpui-ui-hugeplaybacktogglebutton {
@@ -100,7 +102,25 @@
   .bmpui-hidden.bmpui-ui-label, .bmpui-hidden.bmpui-ui-playbacktimelabel {
     display: none; }
 
-.bmpui-ui-container, .bmpui-ui-controlbar, .bmpui-ui-playbacktoggle-overlay, .bmpui-ui-uicontainer, .bmpui-ui-titlebar, .bmpui-ui-volumecontrolbutton {
+/*
+ * this will use the existing `hidden-animated` mixin and add additional transitions properties
+ *
+ * Example:
+ * @include hidden-animated-with-additional-transitions($animation-duration,
+ *         (
+ *                 height: (.35s, cubic-bezier(.4, 0, .2, 1)),
+ *                 width: (.35s, cubic-bezier(.4, 0, .2, 1))
+ *         )
+ * );
+ */
+.bmpui-ui-casttogglebutton {
+  background-image: none; }
+  .bmpui-ui-casttogglebutton:hover {
+    filter: drop-shadow(0 0 1px #fff); }
+  .bmpui-ui-casttogglebutton.bmpui-on {
+    background-image: none; }
+
+.bmpui-ui-container, .bmpui-ui-controlbar, .bmpui-ui-playbacktoggle-overlay, .bmpui-ui-uicontainer, .bmpui-ui-titlebar, .bmpui-ui-volumecontrolbutton, .bmpui-ui-buffering-overlay {
   font-size: 1em; }
 
 /*
@@ -249,6 +269,7 @@
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     bottom: 0;
+    box-sizing: border-box;
     height: 0.3125em;
     left: 0;
     margin: auto;
@@ -465,6 +486,7 @@
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     bottom: 0;
+    box-sizing: border-box;
     height: 0.3125em;
     left: 0;
     margin: auto;
@@ -582,6 +604,84 @@
   .bmpui-ui-vrtogglebutton.bmpui-on {
     background-image: none; }
 
+.bmpui-ui-clickoverlay {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/*
+ * this will use the existing `hidden-animated` mixin and add additional transitions properties
+ *
+ * Example:
+ * @include hidden-animated-with-additional-transitions($animation-duration,
+ *         (
+ *                 height: (.35s, cubic-bezier(.4, 0, .2, 1)),
+ *                 width: (.35s, cubic-bezier(.4, 0, .2, 1))
+ *         )
+ * );
+ */
+.bmpui-ui-buffering-overlay {
+  display: table; }
+  .bmpui-ui-buffering-overlay > .bmpui-container-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
+.bmpui-ui-buffering-overlay {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.6s, visibility 0s;
+  visibility: visible;
+  background-color: rgba(8, 43, 57, 0.7); }
+  .bmpui-ui-buffering-overlay.bmpui-hidden {
+    opacity: 0;
+    transition: opacity 0.6s, visibility 0.6s;
+    visibility: hidden; }
+  .bmpui-ui-buffering-overlay > .bmpui-container-wrapper {
+    padding: 3em; }
+  .bmpui-ui-buffering-overlay a {
+    color: #fff; }
+    .bmpui-ui-buffering-overlay a:hover, .bmpui-ui-buffering-overlay a:visited {
+      color: #fff; }
+  .bmpui-ui-buffering-overlay .bmpui-ui-buffering-overlay-indicator {
+    animation: fancy 2s ease-in infinite;
+    background: none no-repeat center;
+    display: inline-block;
+    height: 2em;
+    margin: .2em;
+    width: 2em; }
+
+@keyframes fancy {
+  0% {
+    opacity: 0;
+    transform: scale(1); }
+  20% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    transform: scale(2); }
+  100% {
+    opacity: 0;
+    transform: scale(3); } }
+    .bmpui-ui-buffering-overlay .bmpui-ui-buffering-overlay-indicator:nth-child(1) {
+      animation-delay: 0s; }
+    .bmpui-ui-buffering-overlay .bmpui-ui-buffering-overlay-indicator:nth-child(2) {
+      animation-delay: 0.2s; }
+    .bmpui-ui-buffering-overlay .bmpui-ui-buffering-overlay-indicator:nth-child(3) {
+      animation-delay: 0.4s; }
+  .bmpui-ui-buffering-overlay.bmpui-hidden .bmpui-ui-buffering-overlay-indicator {
+    display: none; }
+
 /**
  * Turn any value into pixels
  *
@@ -639,7 +739,7 @@
   font-size: 14px;
   line-height: 18px; }
 
-.bmpui-ui-playbacktogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton {
+.bmpui-ui-playbacktogglebutton, .bmpui-ui-fullscreentogglebutton, .bmpui-ui-volumetogglebutton, .bmpui-ui-vrtogglebutton, .bmpui-ui-casttogglebutton {
   display: block;
   min-width: 24px;
   min-height: 24px;
@@ -647,6 +747,7 @@
   background-size: auto 16px; }
 
 .bmpui-ui-hugeplaybacktogglebutton {
+  padding: 0;
   cursor: pointer; }
   .bmpui-ui-hugeplaybacktogglebutton .bmpui-image {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE4IDM2YzkuOTQxIDAgMTgtOC4wNTkgMTgtMThTMjcuOTQxIDAgMTggMCAwIDguMDU5IDAgMThzOC4wNTkgMTggMTggMTh6IiBmaWxsPSIjRjE4ODI1Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNS4xMzMgMTkuMzc4Yy41MTMtLjMyLjcyNi0uNzY5LjcyNi0xLjIxNyAwLS40NDktLjIxMy0uODk3LS43MjYtMS4yMThsLTkuMzA4LTUuNzAzYTEuNDQ1IDEuNDQ1IDAgMCAwLS43NjgtLjIzNWMtLjc0OCAwLTEuMzY3LjUzNC0xLjM2NyAxLjM4OHYxMS41MzVjMCAuODU1LjYyIDEuMzg5IDEuMzY3IDEuMzg5LjIzNCAwIC40OS0uMDY0Ljc2OC0uMjM1bDkuMzA4LTUuNzA0em0tLjc0Mi0xLjI3N2wtOS4xOCA1LjU3NXYtMTEuMTVsOS4xOCA1LjU3NXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
@@ -677,6 +778,13 @@
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTS45NiA3LjIwN2MwLS45MzIuNzUtMS42ODIgMS42ODItMS42ODJoMTguNzE2Yy45MzIgMCAxLjY4Mi43NSAxLjY4MiAxLjY4MnY5LjU4MmMwIC45MzItLjc1IDEuNjgyLTEuNjgyIDEuNjgySDE0LjNsLTIuMTMtMy40NzRhLjIuMiAwIDAgMC0uMzQgMGwtMS42NzcgMi43My0uNDU2Ljc0NEgyLjY0MmMtLjkzMiAwLTEuNjgyLS43NS0xLjY4Mi0xLjY4MlY3LjIwN3ptNi4wNSA3LjUwM2EyLjk4IDIuOTggMCAxIDAgMC01Ljk2MSAyLjk4IDIuOTggMCAwIDAgMCA1Ljk2MXptMTIuODczLTIuOThhMi45OCAyLjk4IDAgMSAxLTUuOTYyIDAgMi45OCAyLjk4IDAgMCAxIDUuOTYyIDB6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"); }
   .bmpui-ui-vrtogglebutton.bmpui-off {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTS45NiA3LjIwN2MwLS45MzIuNzUtMS42ODIgMS42ODItMS42ODJoMTguNzE2Yy45MzIgMCAxLjY4Mi43NSAxLjY4MiAxLjY4MnY5LjU4MmMwIC45MzItLjc1IDEuNjgyLTEuNjgyIDEuNjgySDE0LjNMMTIgMTQuNzE4bC0xLjg0NyAzLjAwOC0uNDU2Ljc0NEgyLjY0MmMtLjkzMiAwLTEuNjgyLS43NS0xLjY4Mi0xLjY4MlY3LjIwN3ptMS42ODItLjE3M2EuMTcuMTcgMCAwIDAtLjE3Mi4xNzN2OS41ODJhLjE3LjE3IDAgMCAwIC4xNzIuMTczaDYuMjA5bC4wMTUtLjAyNCAyLjIxLTMuNi4wMDgtLjAxYy4xNzQtLjI2MS40ODQtLjUyMi45MTYtLjUyMi40MzIgMCAuNzQyLjI2LjkxNi41MjFsLjAwOC4wMTIgMi4yMjEgMy42MjJoLjAzNXYuMDAxaDYuMTc4YS4xNy4xNyAwIDAgMCAuMTcyLS4xNzNWNy4yMDdhLjE3LjE3IDAgMCAwLS4xNzItLjE3M0gyLjY0MnoiIGZpbGw9IiNmZmYiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTcuMDEgMTMuMTY1YTEuNDM1IDEuNDM1IDAgMSAwIDAtMi44NyAxLjQzNSAxLjQzNSAwIDAgMCAwIDIuODd6bTAgMS41NDVhMi45OCAyLjk4IDAgMSAwIDAtNS45NjEgMi45OCAyLjk4IDAgMCAwIDAgNS45NjF6TTE2LjkwMiAxMy4xNjVhMS40MzUgMS40MzUgMCAxIDAgMC0yLjg3IDEuNDM1IDEuNDM1IDAgMCAwIDAgMi44N3ptMCAxLjU0NWEyLjk4IDIuOTggMCAxIDAgMC01Ljk2MiAyLjk4IDIuOTggMCAwIDAgMCA1Ljk2MnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="); }
+
+.bmpui-ui-casttogglebutton {
+  background-size: 24px 24px; }
+  .bmpui-ui-casttogglebutton.bmpui-on {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMTcuMzMzVjIwaDIuNzI3YzAtMS40NzYtMS4yMTgtMi42NjctMi43MjctMi42Njd6bTAtMy41NTV2MS43NzhjMi41MSAwIDQuNTQ1IDEuOTkgNC41NDUgNC40NDRoMS44MTljMC0zLjQ0LTIuODQ2LTYuMjIyLTYuMzY0LTYuMjIyem0wLTMuNTU2VjEyYzQuNTE4IDAgOC4xODIgMy41ODIgOC4xODIgOEgxMmMwLTUuNDA0LTQuNDgyLTkuNzc4LTEwLTkuNzc4ek0yMC4zMiA0SDMuNjc2QzIuNjc2IDQgMiA0LjcwNyAyIDUuNjg1djIuNzZoMS42NzZ2LTIuNzZIMjAuMzJ2MTIuNjM2aC02LjUwMlYyMGg2LjUwMmMxIDAgMS42OC0uNyAxLjY4LTEuNjc5VjUuNjg1QzIyIDQuNzA3IDIxLjMyIDQgMjAuMzIgNHoiIGZpbGw9IiNmMTg4MjUiLz48L3N2Zz4="); }
+  .bmpui-ui-casttogglebutton.bmpui-off {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMTcuMzMzVjIwaDIuNzI3YzAtMS40NzYtMS4yMTgtMi42NjctMi43MjctMi42Njd6bTAtMy41NTV2MS43NzhjMi41MSAwIDQuNTQ1IDEuOTkgNC41NDUgNC40NDRoMS44MTljMC0zLjQ0LTIuODQ2LTYuMjIyLTYuMzY0LTYuMjIyem0wLTMuNTU2VjEyYzQuNTE4IDAgOC4xODIgMy41ODIgOC4xODIgOEgxMmMwLTUuNDA0LTQuNDgyLTkuNzc4LTEwLTkuNzc4ek0yMC4zMiA0SDMuNjc2QzIuNjc2IDQgMiA0LjcwNyAyIDUuNjg1djIuNzZoMS42NzZ2LTIuNzZIMjAuMzJ2MTIuNjM2aC02LjUwMlYyMGg2LjUwMmMxIDAgMS42OC0uNyAxLjY4LTEuNjc5VjUuNjg1QzIyIDQuNzA3IDIxLjMyIDQgMjAuMzIgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="); }
 
 .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-backdrop, .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-backdrop {
   background-color: #787878; }
@@ -876,36 +984,6 @@
         -ms-grid-row-span: 1;
         -ms-grid-column-span: 1; } }
 
-.c-end-screen__progress-bar {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  transform: translateZ(0);
-  animation: decreaseWidth 10s linear forwards;
-  background-color: #f18825; }
-
-.c-end-screen__footer-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 11px;
-  color: white;
-  text-transform: uppercase; }
-  .ffmark-400-normal .c-end-screen__footer-text {
-    font-family: ffmark, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  @media (min-width: 37.5em) {
-    .c-end-screen__footer-text {
-      margin-bottom: 10px; } }
-
-@keyframes decreaseWidth {
-  0% {
-    width: 100%; }
-  100% {
-    width: 0; } }
-
 .bmpui-external-overlay-container {
   position: absolute;
   top: 0;
@@ -913,9 +991,19 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: none; }
+  .bmpui-external-overlay-container.show {
+    display: block; }
   .bmpui-external-overlay-container > * {
     z-index: 1; }
+
+.bmpui-ui-buffering-overlay > .bmpui-container-wrapper {
+  background-position: center center;
+  background-color: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjQiIGhlaWdodD0iMTI0IiB2aWV3Qm94PSIwIDAgMTI0IDEyNCIgY2xhc3M9InZpZGVvcGxheWVyLWxvYWRpbmctaW5kaWNhdG9yIj48c3R5bGU+Y2lyY2xle2ZpbGw6bm9uZTtzdHJva2Utd2lkdGg6NXB4O3RyYW5zaXRpb246MXN9LnZpZGVvcGxheWVyLWxvYWRpbmctaW5kaWNhdG9yIGNpcmNsZS52aWRlb3BsYXllci1sb2FkaW5nLWluZGljYXRvcl9fYmFja2dyb3VuZHtzdHJva2U6IzFkMWQxZDtzdHJva2Utb3BhY2l0eTouMDQ7c3Ryb2tlLXdpZHRoOjEwcHh9Y2lyY2xlLnZpZGVvcGxheWVyLWxvYWRpbmctaW5kaWNhdG9yX19zcGlubmVye3N0cm9rZTojZjE4ODI1O3N0cm9rZS1kYXNoYXJyYXk6MzgwO3N0cm9rZS1kYXNob2Zmc2V0OjM0MDthbmltYXRpb246cm90YXRpb24gMnMgaW5maW5pdGUgbGluZWFyLHJvdGF0aW9uMSAzcyBpbmZpbml0ZSBsaW5lYXJ9QGtleWZyYW1lcyByb3RhdGlvbnswJXt0cmFuc2Zvcm06cm90YXRlKDBkZWcpO3RyYW5zZm9ybS1vcmlnaW46NjJweCA2MnB4fXRve3RyYW5zZm9ybTpyb3RhdGUoMzU5ZGVnKTt0cmFuc2Zvcm0tb3JpZ2luOjYycHggNjJweH19QGtleWZyYW1lcyByb3RhdGlvbjF7MCUsdG97c3Ryb2tlLWRhc2hvZmZzZXQ6MzQwfTUwJXtzdHJva2UtZGFzaG9mZnNldDoyOTB9fTwvc3R5bGU+PGNpcmNsZSBjbGFzcz0idmlkZW9wbGF5ZXItbG9hZGluZy1pbmRpY2F0b3JfX2JhY2tncm91bmQiIGN4PSI2MiIgY3k9IjYyIiByPSI1NSIvPjxjaXJjbGUgY2xhc3M9InZpZGVvcGxheWVyLWxvYWRpbmctaW5kaWNhdG9yX19zcGlubmVyIiBjeD0iNjIiIGN5PSI2MiIgcj0iNTUiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  transition: none; }
 
 .c-error-screen {
   position: absolute;
@@ -948,4 +1036,5 @@
     font-family: ffmark, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .bitmovinplayer-container {
+  background-color: transparent !important;
   background-image: none !important; }

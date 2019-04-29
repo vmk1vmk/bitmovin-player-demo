@@ -2,6 +2,7 @@ import { PlayerAPI, UIConfig } from 'bitmovin-player';
 
 import { AdMessageLabel } from 'bitmovin-player-ui/dist/js/framework/components/admessagelabel';
 import { Container } from 'bitmovin-player-ui/dist/js/framework/components/container';
+import { CastToggleButton } from 'bitmovin-player-ui/dist/js/framework/components/casttogglebutton';
 import { ControlBar } from 'bitmovin-player-ui/dist/js/framework/components/controlbar';
 import { FullscreenToggleButton } from 'bitmovin-player-ui/dist/js/framework/components/fullscreentogglebutton';
 import { PlaybackTimeLabel, PlaybackTimeLabelMode } from 'bitmovin-player-ui/dist/js/framework/components/playbacktimelabel';
@@ -89,7 +90,7 @@ export class UIFactory {
 
     private static getTitleBar(): TitleBar {
         return new TitleBar({
-            components: [new Spacer(), new VRToggleButton()]
+            components: [new Spacer(), new CastToggleButton(), new VRToggleButton()]
         });
     }
 
